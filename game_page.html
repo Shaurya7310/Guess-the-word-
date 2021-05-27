@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body style="background-color:turquoise;">
+
+<h4 style="color:white; font-family: 'Chela One', cursive; font-size: 25px;" id="player1_name"></h4> <span style="color:white; font-family: 'Chela One', cursive; font-size: 25px;" id="player1_score"></span>
+<br>
+<h4 style="color:white; font-family: 'Chela One', cursive; font-size: 25px;"id="player2_name"></h4> <span style="color:white; font-family: 'Chela One', cursive; font-size: 25px;" id="player2_score"></span>
+
+<div class="container">
+	<center>
+		<h1 style="color:yellow; font-family: 'Permanent Marker', cursive; font-size: 40px; margin-bottom: 50px;">Guess The Word!</h1>
+		<h3 style="font-family: 'Righteous', cursive; color:white;" id="player_question"></h3>
+		<h3 style="font-family: 'Righteous', cursive; color:white;"  id="player_answer"></h3>
+		<div id="output" class="col-lg-6"> </div>
+		<br>
+		<br>
+		<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet
+		</b>
+		</label>
+		<input type="text" id="word" class="form-control" placeholder="Word">
+		<br>
+		<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
